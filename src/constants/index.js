@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  vuejs,
+  diva
 } from "../assets";
 
 export const navLinks = [
@@ -49,14 +51,14 @@ const services = [
     title: "React Native Developer",
     icon: mobile,
   },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  // {
+  //   title: "Backend Developer",
+  //   icon: backend,
+  // },
+  // {
+  //   title: "Content Creator",
+  //   icon: creator,
+  // },
 ];
 
 const technologies = [
@@ -77,12 +79,24 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Vue JS",
+    icon: vuejs,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
   },
   {
     name: "Tailwind CSS",
@@ -100,71 +114,68 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Vue.js Developer",
+    company_name: "XCore",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "September 2021 - November 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Supporting to fix bugs and resolving request from customer",
+      "Developing the timekeeping feature",
+      "Building up an new feature using Stringee",
+      "Developing UI base on design with Vue2 and integrating API",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Vue.js Developer",
+    company_name: "DKEdu",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "November 2021 - May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Building a management system applied to employee training",
+      "Developing UI base on design with Vue2 and integrating API with GraphQL",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Vue.js Developer",
+    company_name: "Smart Hub",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 2022 - 15 June 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Supporting to fix bug and build an feature",
+      "Developing UI base on design with Vue3 and integrating API with GraphQL",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Vue.js Developer",
+    company_name: "WOW",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "15 June 2022 - September 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Building up management system that will be applied to the internal operations and customer management",
+      "Co-operating with web designer and BA to improve UI",
+      "Developing UI base on design with Vue3 and integrating API with GraphQL",
+    ],
+  },
+  {
+    title: "Vue.js Developer",
+    company_name: "DIVA ERP",
+    icon: diva,
+    iconBg: "#E6DEDD",
+    date: "September 2022 - Present",
+    points: [
+      "Building up management system that will be applied to the internal operations and customer management",
+      "Co-operating with web designer and BA to improve UI",
+      "Improving performance and offering solutions to feedback from customer and user",
+      "Developing UI base on design with Vue3 and integrating API with GraphQL",
+      "Supporting for internship",
     ],
   },
 ];

@@ -1,11 +1,26 @@
+import * as THREE from 'three'
 import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { MTLLoader, OBJLoader, DDSLoader } from 'three-stdlib'
+
+THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader())
+
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  // const computer = useGLTF("./desktop_pc/scene.gltf");
+  // const { materials, scene } = useLoader(
+  //   GLTFLoader,
+  //   "https://gabriellazcano.com/models/capybara.glb"
+  // );
+
+  const materials = useLoader(MTLLoader, '/not_found.mtl')
+  const obj = useLoader(OBJLoader, '/not_found.obj', (loader) => {
+    materials.preload()
+    loader.setMaterials(materials)
+  })
 
   return (
     <mesh>
@@ -20,10 +35,10 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
+        object={obj}
+        scale={isMobile ? 0.7 : 0.05}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        rotation={[-0.5, -0.2, -0.05]}
       />
     </mesh>
   );
@@ -58,12 +73,12 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 50], fov: 10 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          enableZoom={false}
+          // enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />

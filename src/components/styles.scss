@@ -1,0 +1,120 @@
+.item {
+  &-frontground {
+    &__about {
+      &:hover {
+        & + .item-background__about {
+          display: flex;
+          letter-spacing: 0.25rem;
+          opacity: 0.1;
+        }
+      }
+    }
+    &__work {
+      &:hover {
+        & + .item-background__work {
+          display: flex;
+          letter-spacing: 0.25rem;
+          opacity: 0.1;
+        }
+      }
+    }
+    &__contact {
+      &:hover {
+        & + .item-background__contact {
+          display: flex;
+          letter-spacing: 0.25rem;
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+}
+
+.nav__menu {
+  .line {
+    position: relative;
+    background-color: transparent;
+    height: 2px;
+    width: 36px;
+    display: block;
+    margin: 6px;
+    border-radius: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: whitesmoke;
+      transition: all 0.5s ease;
+    }
+    &--st {
+      &::before {
+        width: 50%;
+      }
+    }
+    &--nd {
+      &::before {
+        width: 75%;
+      }
+    }
+    &--rd {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+  &.close {
+    .line {
+      &--st {
+        &::before {
+          width: 0;
+          opacity: 0;
+        }
+      }
+      &--nd {
+        &::before {
+          width: 100%;
+          rotate: 45deg;
+        }
+      }
+      &--rd {
+        &::before {
+          margin-top: -16px;
+          width: 100%;
+          rotate: -35deg;
+        }
+      }
+    }
+  }
+}
+
+@keyframes type-text {
+  0% {
+    width: 0%;
+  }
+  50%{
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid #fff;
+  }
+  50% {
+    border-right: 2px solid #fff0;
+  }
+}
+
+.typing-text {
+  max-width: 560px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: solid 2px white;
+  animation: type-text 4s steps(24) infinite, blink 1s infinite;
+}

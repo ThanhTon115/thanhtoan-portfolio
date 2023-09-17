@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { XCanvas } from "./canvas/XCanvas";
 
 const Hero = () => {
   return (
@@ -11,21 +12,20 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-1 sm:h-60 h-40 violet-gradient" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Adrian</span>
+            Hi, I'm <span className="text-[#915EFF]">Toan Tran</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+            I develop user interfaces and web applications
           </p>
         </div>
       </div>
-
-      <ComputersCanvas />
+      <XCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
