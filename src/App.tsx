@@ -1,22 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
   Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-  Home,
 } from "./components";
+import React from "react";
+import RouteList from "./router";
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <div className="relative h-screen">
-        <Home />
+        <RouteList/>
         {/* <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Hero />
         </div>

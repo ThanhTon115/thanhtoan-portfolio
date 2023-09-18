@@ -1,30 +1,10 @@
 .item {
   &-frontground {
-    &__about {
-      &:hover {
-        & + .item-background__about {
-          display: flex;
-          letter-spacing: 0.25rem;
-          opacity: 0.1;
-        }
-      }
-    }
-    &__work {
-      &:hover {
-        & + .item-background__work {
-          display: flex;
-          letter-spacing: 0.25rem;
-          opacity: 0.1;
-        }
-      }
-    }
-    &__contact {
-      &:hover {
-        & + .item-background__contact {
-          display: flex;
-          letter-spacing: 0.25rem;
-          opacity: 0.1;
-        }
+    &:hover {
+      & + .item-background {
+        display: flex;
+        letter-spacing: 0.25rem;
+        opacity: 0.1;
       }
     }
   }
@@ -93,7 +73,7 @@
   0% {
     width: 0%;
   }
-  50%{
+  50% {
     width: 100%;
   }
   100% {
@@ -117,4 +97,19 @@
   white-space: nowrap;
   border-right: solid 2px white;
   animation: type-text 4s steps(24) infinite, blink 1s infinite;
+}
+
+.home-icon {
+  &:hover {
+    span {
+      display: block;
+    }
+  }
+  span {
+    display: none;
+  }
+}
+
+.highlight-box {
+  box-shadow: #52bf9140 0px 25px 50px -12px;
 }

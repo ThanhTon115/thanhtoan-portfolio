@@ -24,7 +24,7 @@ import {
   tripguide,
   threejs,
   vuejs,
-  diva
+  diva,
 } from "../assets";
 
 export const navLinks = [
@@ -273,4 +273,6 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const CvUrl =
+  "https://drive.google.com/file/d/1AG4ev1DQfDbNNffzmuIHcidjiJDg6HUf/view?usp=drive_link";
+export { services, technologies, experiences, testimonials, projects, CvUrl };
