@@ -25,6 +25,10 @@ import {
   threejs,
   vuejs,
   diva,
+  smarthub,
+  edu,
+  wow,
+  xcore,
 } from "../assets";
 
 export const navLinks = [
@@ -120,7 +124,7 @@ const experiences = [
   {
     title: "Vue.js Developer",
     company_name: "XCore",
-    icon: starbucks,
+    icon: xcore,
     iconBg: "#383E56",
     date: "September 2021 - November 2021",
     points: [
@@ -133,7 +137,7 @@ const experiences = [
   {
     title: "Vue.js Developer",
     company_name: "DKEdu",
-    icon: tesla,
+    icon: edu,
     iconBg: "#E6DEDD",
     date: "November 2021 - May 2022",
     points: [
@@ -144,7 +148,7 @@ const experiences = [
   {
     title: "Vue.js Developer",
     company_name: "Smart Hub",
-    icon: shopify,
+    icon: smarthub,
     iconBg: "#383E56",
     date: "June 2022 - 15 June 2022",
     points: [
@@ -155,7 +159,7 @@ const experiences = [
   {
     title: "Vue.js Developer",
     company_name: "WOW",
-    icon: meta,
+    icon: wow,
     iconBg: "#E6DEDD",
     date: "15 June 2022 - September 2022",
     points: [

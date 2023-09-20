@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { hey, logo } from "../assets";
 import "./styles.scss";
 import { modules } from "../router";
 
@@ -33,7 +32,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-2 fixed top-0 z-20 ease-in duration-300 ${
-        scrolled ? "bg-[#52bf90d7]" : "bg-transparent"
+        scrolled ? "bg-[#52bf904f]" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center mx-auto">
@@ -45,11 +44,16 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <div className="w-[56px] h-[56px] rounded-full border-solid border-2">
+          <div className="relative logo-card">
+            <img
+              src={hey}
+              alt="logo"
+              className="w-[32px] h-[32px] object-contain ease-in duration-100 absolute top-0 right-0 rotate-45 opacity-0 hey"
+            />
             <img
               src={logo}
               alt="logo"
-              className="w-[56px] h-[56px] object-contain p-2 hover:-rotate-12 ease-in duration-300"
+              className="w-[64px] h-[64px] object-contain p-2 ease-in duration-300"
             />
           </div>
         </Link>
@@ -86,7 +90,7 @@ const Navbar = () => {
             } p-6 absolute top-0 right-0 bg-[#000000e7] h-[100vh] w-[100vw] z-3 justify-center items-center`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-              {modules.slice(1, 4).map((nav) => (
+              {modules.slice(0, 4).map((nav) => (
                 <li
                   key={nav.name}
                   className={`font-poppins text-[56px] self-center  ${
@@ -98,7 +102,7 @@ const Navbar = () => {
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.name);
-                      navigate(nav.path)
+                      navigate(nav.path);
                     }}
                   >
                     {nav.title}

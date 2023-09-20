@@ -158,6 +158,7 @@ export const XCanvas = (props: XCanvasType) => {
           rotation={props.rotation}
           isMobile={isMobile}
           obj={props.obj}
+          scale={props.scale}
           onRender={(val) => (showModel.current = val)}
         />
       </Suspense>

@@ -49,7 +49,7 @@ const About = () => {
         <div>
           <motion.p
             variants={fadeIn("left", "spring", 0.1, 1)}
-            className="mt-4 text-[40px] max-md:text-[24px]"
+            className="mt-4 text-[56px] max-md:text-[24px]"
           >
             I'm creative{" "}
             <span className="text-[#52bf90]">Front-end Web Developer</span>{" "}
@@ -57,7 +57,7 @@ const About = () => {
           </motion.p>
           <motion.p
             variants={fadeIn("left", "spring", 0.1, 1)}
-            className="mt-4 text-[24px] max-md:text-[16px]"
+            className="mt-4 text-[24px] max-md:text-[16px] text-justify"
           >
             I have experience in TypeScript and JavaScript, and expertise in
             frameworks like React and Vue. I'm a quick learner and collaborate

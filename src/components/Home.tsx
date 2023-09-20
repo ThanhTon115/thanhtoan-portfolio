@@ -16,7 +16,7 @@ const Contact = () => {
     <>
       <div className="fixed bottom-0 w-full text-center flex items-center justify-center sm:hidden">
         <img
-          className="h-[24px] my-5 mx-4 opacity-50 hover:opacity-100 cursor-pointer"
+          className="h-[28px] my-5 mx-4 opacity-50 hover:opacity-100 cursor-pointer"
           alt="git hub link"
           src="./home-icon/git-hub.svg"
           onClick={handleViewGit}
@@ -32,7 +32,7 @@ const Contact = () => {
           </span>
         </div>
         <img
-          className="h-[24px] my-5 mx-4 opacity-50 hover:opacity-100 cursor-pointer"
+          className="h-[28px] my-5 mx-4 opacity-50 hover:opacity-100 cursor-pointer"
           alt="linkedin"
           src="./home-icon/linkedin.svg"
           onClick={handleViewLinkedin}
@@ -55,7 +55,7 @@ const Contact = () => {
       <div className="max-sm:hidden">
         <div className="absolute left-0 bottom-0 h-screen px-10 flex flex-col justify-center items-start">
           <img
-            className="h-[24px] my-4 opacity-50 hover:opacity-100 cursor-pointer"
+            className="h-[28px] my-4 opacity-50 hover:opacity-100 cursor-pointer"
             alt="git hub link"
             src="./home-icon/git-hub.svg"
             onClick={handleViewGit}
@@ -69,7 +69,7 @@ const Contact = () => {
             <span>thanhtontran115@gmail.com</span>
           </div>
           <img
-            className="h-[24px] my-4 opacity-50 hover:opacity-100 cursor-pointer"
+            className="h-[28px] my-4 opacity-50 hover:opacity-100 cursor-pointer"
             alt="linkedin"
             src="./home-icon/linkedin.svg"
             onClick={handleViewLinkedin}

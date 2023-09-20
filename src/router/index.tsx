@@ -4,7 +4,6 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Home,
   Tech,
   Works,
@@ -22,12 +21,12 @@ export const modules = [
     title: "About",
     component: () => <About />,
   },
-  {
-    path: "/works",
-    name: "works",
-    title: "Works",
-    component: () => <Works />,
-  },
+  // {
+  //   path: "/works",
+  //   name: "works",
+  //   title: "Works",
+  //   component: () => <Works />,
+  // },
   {
     path: "/experience",
     name: "experience",
@@ -39,12 +38,6 @@ export const modules = [
     name: "contact",
     title: "Contact",
     component: () => <Contact />,
-  },
-  {
-    path: "/feedback",
-    name: "feedback",
-    title: "Feedback",
-    component: () => <Feedbacks />,
   },
   {
     path: "/technical",

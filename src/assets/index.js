@@ -1,4 +1,5 @@
-import logo from "./logo.png";
+import logo from "./logo.svg";
+import hey from "./hey.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -27,6 +28,10 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import diva from "./project/diva.svg";
+import smarthub from "./project/SH.svg";
+import wow from "./project/WOW.svg";
+import edu from "./project/EDU.svg";
+import xcore from "./project/Xcore.svg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -63,4 +68,9 @@ export {
   jobit,
   tripguide,
   diva,
+  hey,
+  smarthub,
+  edu,
+  wow,
+  xcore,
 };

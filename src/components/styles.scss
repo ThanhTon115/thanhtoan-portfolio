@@ -113,3 +113,51 @@
 .highlight-box {
   box-shadow: #52bf9140 0px 25px 50px -12px;
 }
+
+@keyframes rotate {
+  0%,
+  100% {
+    rotate: -15deg;
+  }
+  50% {
+    rotate: 15deg;
+  }
+}
+.logo-card {
+  &:hover > .hey {
+    opacity: 1;
+    animation: rotate 1s infinite;
+  }
+}
+
+.project {
+  &-card {
+    margin: -24px;
+    padding: 24px;
+    overflow: hidden;
+    &:hover {
+      .project {
+        &-background {
+          height: 1000px;
+          width: 1000px;
+          background-color: #4198739f;
+          border-radius: 0;
+          height: 100px;
+          margin: 0;
+        }
+        &-name {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &-background {
+    transition: all 0.8s ease;
+    position: absolute;
+    height: 0;
+    width: 0;
+    margin: 40px 0 0 40px;
+    top: 0;
+    left: 0;
+  }
+}
