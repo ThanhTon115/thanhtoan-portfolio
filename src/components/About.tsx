@@ -72,7 +72,7 @@ const About = () => {
         >
           <img
             className="h-[360px] my-4 max-md:h-[200px] m-auto"
-            src="src/assets/Me.svg"
+            src="/avatar.svg"
             alt="my pic"
           />
           <Tilt className="xs:w-[250px] w-full m-auto">

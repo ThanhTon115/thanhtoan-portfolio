@@ -48,11 +48,15 @@ const BallCanvas = ({ icon }) => {
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader />}>
-        {showModel.current && <OrbitControls enableZoom={false} />}
-        <Ball imgUrl={icon} onRender={(val) => (showModel.current = val)} />
+      <Suspense fallback={showModel.current && <CanvasLoader />}>
+        <OrbitControls enableZoom={false} />
+        <Ball
+          imgUrl={icon}
+          onRender={(val) => {
+            showModel.current = val;
+          }}
+        />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );

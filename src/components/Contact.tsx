@@ -73,7 +73,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-[#191919] p-8 rounded-2xl w-[50%]"
+        className="flex-[0.75] bg-[#191919] p-8 rounded-2xl w-[80%] max-lg:w-full"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -128,7 +128,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:auto md:h-[750px] h-[550px]  w-[50%]"
+        className="xl:flex-1 xl:auto md:h-[750px] h-[550px] max-sm:h-[350px]  w-full xl:w-[50%]"
       >
         <EarthCanvas />
         {/* <XCanvas
